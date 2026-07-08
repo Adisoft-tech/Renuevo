@@ -4,6 +4,7 @@ options:
   deploymentTarget:
     iOS: "16.0"
     macOS: "13.0"
+    watchOS: "9.0"
   createIntermediateGroups: true
 
 settings:
@@ -36,6 +37,12 @@ targets:
     dependencies:
       - target: RenuevoWidget
         embed: true
+      # RenuevoWatch is intentionally NOT embedded here: this machine doesn't have
+      # the watchOS platform installed (Xcode > Settings > Components), and an
+      # embedded watch app dependency makes the whole scheme fail to build without
+      # it. Once you install the watchOS platform, add back:
+      #   - target: RenuevoWatch
+      #     embed: true
       - sdk: UserNotifications.framework
 
   RenuevoWidget:
@@ -59,6 +66,25 @@ targets:
     dependencies:
       - sdk: WidgetKit.framework
       - sdk: SwiftUI.framework
+
+  RenuevoWatch:
+    type: application
+    platform: watchOS
+    deploymentTarget: "9.0"
+    sources:
+      - path: RenuevoWatch
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.renuevo.app.watchkitapp
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Renuevo
+        INFOPLIST_KEY_WKApplication: YES
+        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: com.renuevo.app
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        TARGETED_DEVICE_FAMILY: "4"
+        SUPPORTS_MACCATALYST: NO
+        SKIP_INSTALL: YES
 
   RenuevoMenuBar:
     type: application

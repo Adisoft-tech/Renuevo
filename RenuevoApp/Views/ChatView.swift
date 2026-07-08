@@ -81,6 +81,8 @@ struct ChatView: View {
 
 private struct ChatExchangeView: View {
     let message: ChatMessage
+    @StateObject private var speech = SpeechReader()
+    @State private var showingBreathing = false
 
     var body: some View {
         VStack(alignment: .trailing, spacing: 12) {
@@ -110,11 +112,20 @@ private struct ChatExchangeView: View {
                 }
 
                 ChatSection(title: "Ejercicios para calmarte", systemImage: "leaf") {
-                    ForEach(message.response.exercises, id: \.self) { exercise in
-                        HStack(alignment: .top, spacing: 6) {
-                            Text("•")
-                            Text(exercise)
+                    VStack(alignment: .leading, spacing: 6) {
+                        ForEach(message.response.exercises, id: \.self) { exercise in
+                            HStack(alignment: .top, spacing: 6) {
+                                Text("•")
+                                Text(exercise)
+                            }
                         }
+                        Button {
+                            showingBreathing = true
+                        } label: {
+                            Label("Hacer ejercicio de respiración guiado", systemImage: "wind")
+                        }
+                        .buttonStyle(.bordered)
+                        .padding(.top, 4)
                     }
                 }
 
@@ -122,11 +133,19 @@ private struct ChatExchangeView: View {
                     Text(message.response.encouragement)
                         .fontWeight(.medium)
                 }
+
+                SpeechButton(
+                    speech: speech,
+                    text: "\(message.response.passage). \(message.response.reflection). \(message.response.prayer)"
+                )
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color.renuevoBackground)
             .clipShape(RoundedRectangle(cornerRadius: 16))
+        }
+        .sheet(isPresented: $showingBreathing) {
+            NavigationStack { BreathingView() }
         }
     }
 }

@@ -37,6 +37,24 @@ struct RenuevoWidgetView: View {
     let entry: QuoteEntry
 
     var body: some View {
+        switch family {
+        case .accessoryCircular:
+            AccessoryCircularView(entry: entry)
+        case .accessoryRectangular:
+            AccessoryRectangularView(entry: entry)
+        case .accessoryInline:
+            Text("🙏 \(entry.quote.text)")
+        default:
+            HomeScreenView(entry: entry)
+        }
+    }
+}
+
+private struct HomeScreenView: View {
+    @Environment(\.widgetFamily) private var family
+    let entry: QuoteEntry
+
+    var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 6) {
                 Image("SunMark")
@@ -66,6 +84,38 @@ struct RenuevoWidgetView: View {
     }
 }
 
+/// Lock Screen circular widget: just the category glyph, so it stays legible at tiny size.
+private struct AccessoryCircularView: View {
+    let entry: QuoteEntry
+
+    var body: some View {
+        ZStack {
+            AccessoryWidgetBackground()
+            Image(systemName: entry.quote.category.symbol)
+                .font(.title2)
+        }
+        .widgetBackground(Color.clear)
+    }
+}
+
+/// Lock Screen rectangular widget: category + a couple of lines of the verse.
+private struct AccessoryRectangularView: View {
+    let entry: QuoteEntry
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Label(entry.quote.category.rawValue, systemImage: entry.quote.category.symbol)
+                .font(.caption2.bold())
+            Text(entry.quote.text)
+                .font(.caption)
+                .lineLimit(3)
+            Text(entry.quote.reference)
+                .font(.caption2)
+        }
+        .widgetBackground(Color.clear)
+    }
+}
+
 extension View {
     /// iOS 17 requires `containerBackground` for widgets; earlier versions use `.background`.
     @ViewBuilder
@@ -87,6 +137,6 @@ struct RenuevoWidget: Widget {
         }
         .configurationDisplayName("Mensaje del día")
         .description("Un mensaje diario de fe, superación y crecimiento personal.")
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall, .systemMedium, .accessoryCircular, .accessoryRectangular, .accessoryInline])
     }
 }

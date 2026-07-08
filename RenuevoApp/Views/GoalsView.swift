@@ -5,36 +5,33 @@ struct GoalsView: View {
     @State private var showingNewGoal = false
 
     var body: some View {
-        NavigationStack {
-            Group {
-                if store.goals.isEmpty {
-                    ContentUnavailableFallback(
-                        title: "Aún no tienes metas",
-                        message: "Toca + para escribir tu primera meta, con preguntas guiadas para darle profundidad.",
-                        systemImage: "target"
-                    )
-                } else {
-                    List {
-                        ForEach(store.goals) { goal in
-                            GoalRow(goal: goal)
-                        }
-                        .onDelete(perform: store.deleteGoals)
+        Group {
+            if store.goals.isEmpty {
+                ContentUnavailableFallback(
+                    title: "Aún no tienes metas",
+                    message: "Toca + para escribir tu primera meta, con preguntas guiadas para darle profundidad.",
+                    systemImage: "target"
+                )
+            } else {
+                List {
+                    ForEach(store.goals) { goal in
+                        GoalRow(goal: goal)
                     }
+                    .onDelete(perform: store.deleteGoals)
                 }
             }
-            .navigationTitle("Metas")
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        showingNewGoal = true
-                    } label: {
-                        Image(systemName: "plus")
-                    }
+        }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    showingNewGoal = true
+                } label: {
+                    Image(systemName: "plus")
                 }
             }
-            .sheet(isPresented: $showingNewGoal) {
-                GoalEditorView(goal: nil)
-            }
+        }
+        .sheet(isPresented: $showingNewGoal) {
+            GoalEditorView(goal: nil)
         }
     }
 }

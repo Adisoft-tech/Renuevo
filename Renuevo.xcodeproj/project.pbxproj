@@ -7,44 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E47D02ADEDA87CB01C5BAB /* MemorizationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA567AA434DA77F707FAA8B0 /* MemorizationCard.swift */; };
 		05118DBDF87EE254483D876F /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA5486FDB5DE4F73EECC0A0 /* JournalView.swift */; };
+		05AFF21716E7E8ED7A972FB4 /* PrayerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFB031080E453C56A9DF45 /* PrayerRequest.swift */; };
 		05CCB9217317A52403833AE5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482211621A7FEDF27065F2CB /* WidgetKit.framework */; };
 		0B9446A0035B1BCB217AD2A2 /* RenuevoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560A939D106E5818DB37279 /* RenuevoWidget.swift */; };
+		0CFA8B81299C2103BD7B49EE /* CloudSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED633F2E493344B43066BE60 /* CloudSyncManager.swift */; };
 		0F503F64A0CB07CE61875F8A /* QuoteLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358425C0F96121B90C3C3D70 /* QuoteLibrary.swift */; };
+		106E4676759AA7C11CB93A8A /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398041338873243B1EB69B7C /* Mood.swift */; };
 		112634389D33F4EB556735B4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677004B8FF4121E5F0CB9428 /* Theme.swift */; };
 		122617D58190A3D8FAD7D0C9 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398041338873243B1EB69B7C /* Mood.swift */; };
+		129BE91829C2C9B928467838 /* PrayerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFB031080E453C56A9DF45 /* PrayerRequest.swift */; };
 		15D8F681A79F240A4EC2E94A /* MoodLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508FFA3CDAE2A3BFDE7D188 /* MoodLibrary.swift */; };
+		187FC2B5438145F301D419FA /* MetasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BA4374CD30C4F7595B95C /* MetasView.swift */; };
 		18820186AE556200A5121F4A /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983C6AC6BABEA8A71F5E023D /* TodayView.swift */; };
+		1E0827FEAF4646FA22DDD438 /* QuoteLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358425C0F96121B90C3C3D70 /* QuoteLibrary.swift */; };
 		1F9A8121C9190165E59F2617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE522ABD1FCF8E439C5D7DFE /* Assets.xcassets */; };
+		20C903AFEEC6F68229C8EB4F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFA0335446EC30B888BF7D /* Quote.swift */; };
+		2152740E8C223F7578C6ECD0 /* SeasonalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C115BCE07ADDE98977CCD /* SeasonalCollection.swift */; };
+		24C1DB3549FA134590C94782 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92ED7C43C4E8527DCED78DA /* Habit.swift */; };
+		258B15C5B9FC0D310DD688EB /* RenuevoWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF3A7B5C0630D98873B126 /* RenuevoWatchApp.swift */; };
+		26125B30118BDEEAC42B0476 /* DateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4454869EB907D379AEA0AF /* DateKey.swift */; };
 		26869DE27AC10A2B6B567074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE522ABD1FCF8E439C5D7DFE /* Assets.xcassets */; };
 		26C534413B889563B2A3FE42 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFA0335446EC30B888BF7D /* Quote.swift */; };
+		30C50A49372FF04C8D699BFD /* SeasonalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C115BCE07ADDE98977CCD /* SeasonalCollection.swift */; };
 		323F6C07F13F43786CB22CF8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677004B8FF4121E5F0CB9428 /* Theme.swift */; };
+		35B7A47E22EED038C3712724 /* MoodLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508FFA3CDAE2A3BFDE7D188 /* MoodLibrary.swift */; };
 		36A94BDE26A6B0D5D8078D27 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398041338873243B1EB69B7C /* Mood.swift */; };
+		37C5B21CE780CAE0BE00266A /* PrayerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFB031080E453C56A9DF45 /* PrayerRequest.swift */; };
+		470E7D5E6B590D752F54161C /* TodayVerseIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AE4F5E58F2F9FD6236C34 /* TodayVerseIntent.swift */; };
 		47A12F3801A19211B8752DE6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFA0335446EC30B888BF7D /* Quote.swift */; };
+		4AB42951B8A4B60370D8A617 /* ReadingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCF516A409E2578D0EDD41 /* ReadingPlan.swift */; };
+		4B1DC7670E3204F99D5B1AF5 /* MemorizationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA567AA434DA77F707FAA8B0 /* MemorizationCard.swift */; };
 		4C3B2EBD33E492C5057D726E /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E4F8D1CE61FC9DA916A176 /* Goal.swift */; };
 		4E697965B771F6891B8D0EEA /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E25E57485C484C41A3E2204 /* ChatMessage.swift */; };
+		570A94F48A4DC20CE78D41FF /* BreathingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932B0FF9A77BAB6334B1977 /* BreathingView.swift */; };
+		5A012AD46718A687D3DC4849 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92ED7C43C4E8527DCED78DA /* Habit.swift */; };
+		5EE9E8E3F95895F7F370889D /* ReadingPlanLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADBBF93DC2EA8DD48ECBA12 /* ReadingPlanLibrary.swift */; };
+		5F8BDEFB295CBCACAF4C2F8F /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92ED7C43C4E8527DCED78DA /* Habit.swift */; };
 		5FC3AB9943DB3B1172671CC8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553F5356BB239FA1E4AEBBA1 /* SwiftUI.framework */; };
+		60A7D92FB83746F23A94D619 /* ReadingPlanLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADBBF93DC2EA8DD48ECBA12 /* ReadingPlanLibrary.swift */; };
+		60B6B9EE6859BAAC84904486 /* ReadingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCF516A409E2578D0EDD41 /* ReadingPlan.swift */; };
+		695A2C8AD5D153A9A96804FD /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76166801CBB7CE989A8BFE4 /* InsightsView.swift */; };
 		6C38E5F95FA2BB9075238199 /* RenuevoMenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991C042FB1C635F173157B3 /* RenuevoMenuBarApp.swift */; };
+		704E95B946ED02C4750D9B0E /* MemorizationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA567AA434DA77F707FAA8B0 /* MemorizationCard.swift */; };
 		713FCCB7753931FBBDC23041 /* MoodLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508FFA3CDAE2A3BFDE7D188 /* MoodLibrary.swift */; };
 		7381A870637B1C17572B86B5 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF925EBCD2C3C4009C564397 /* UserNotifications.framework */; };
 		76F306E8071EAAD5B79069B2 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398041338873243B1EB69B7C /* Mood.swift */; };
 		778AC818C1DB8DBAA344F373 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677004B8FF4121E5F0CB9428 /* Theme.swift */; };
 		78D364E622455BDD2A011AD9 /* GoalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5627E2BE249290CBC81C89A /* GoalEditorView.swift */; };
+		7963D47616324CCB83073878 /* ReadingPlanLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADBBF93DC2EA8DD48ECBA12 /* ReadingPlanLibrary.swift */; };
 		79D23384C6B20A464F64980F /* RenuevoWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E43A078F08595C49A899F6 /* RenuevoWidgetBundle.swift */; };
+		7AA7E42605E3D7BDC9378E82 /* DateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4454869EB907D379AEA0AF /* DateKey.swift */; };
 		7AEAC1E70772CFEC92DB48B1 /* JournalEntryEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9E1AFA10DCFA68F7FD81C /* JournalEntryEditor.swift */; };
+		7B2B3392A1D82743D03C4B44 /* DiarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D257318451E39E8047562 /* DiarioView.swift */; };
+		8330F4A47A8AD5620E85BBEB /* PrayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F2AE5E82A1653A24485B8 /* PrayerListView.swift */; };
 		84D27DEC75984FD25ABA4775 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE4191753CEE9D626783E0 /* NotificationManager.swift */; };
+		89E90F058790E61E9AF028CB /* HabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F593E33AFEFF2E79CFAC1E3F /* HabitsView.swift */; };
+		8A149B1CFFF67F88E1F6AB5D /* MemorizationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA567AA434DA77F707FAA8B0 /* MemorizationCard.swift */; };
+		8EE7B7BE61A118572A7C5C12 /* ReadingPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF5E05FCEF83A7B4B30FD91 /* ReadingPlansView.swift */; };
+		8F74F35E9474340CF1088A8D /* PrayerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFB031080E453C56A9DF45 /* PrayerRequest.swift */; };
+		9272099B848281EB36FED550 /* SpeechReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE391B52565BCFC409EC26 /* SpeechReader.swift */; };
 		92A689BCC5C1CB4D0AB5B69C /* QuoteLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358425C0F96121B90C3C3D70 /* QuoteLibrary.swift */; };
+		967B244EB4699C700C90AD20 /* MemorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121CA8522954DEDB465B2F21 /* MemorizationView.swift */; };
 		9DF1F71039248C039D9CBA35 /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8284F8F92A52D348EFF280 /* GoalsView.swift */; };
 		9F9AC129EF3C60481E5E2843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896B7BF2EF3132C2B6DFF1F5 /* Assets.xcassets */; };
+		A2A426E7C115D3C5C26A8F55 /* WatchBreathingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF0FC929D5BA2F815D8F57 /* WatchBreathingView.swift */; };
+		A3B96FB91EAD56B9A731636F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE522ABD1FCF8E439C5D7DFE /* Assets.xcassets */; };
+		AC70197D011DBCB8F75DB65D /* SeasonalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C115BCE07ADDE98977CCD /* SeasonalCollection.swift */; };
+		B7B8562C1BB52859133EFBC8 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92ED7C43C4E8527DCED78DA /* Habit.swift */; };
 		B99EF2AB62E604EE28EB7D1E /* RenuevoWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 088B1D7708332A6CD87379FA /* RenuevoWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC3CD8E34D44AF87B21599E2 /* SeasonalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C115BCE07ADDE98977CCD /* SeasonalCollection.swift */; };
+		C03F6B3CFEF9280AE57520C6 /* ReadingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCF516A409E2578D0EDD41 /* ReadingPlan.swift */; };
 		C17688FEA3FF8C9990E10315 /* MoodLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508FFA3CDAE2A3BFDE7D188 /* MoodLibrary.swift */; };
 		D28D68416B0E9AF95EE29CE5 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA9046DCF4860E9D52FABB2 /* RootTabView.swift */; };
 		D67A530CB45F729BA12689D1 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F430E08787596C34896C4F /* DataStore.swift */; };
+		DA89320F919C9F126ACC5096 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677004B8FF4121E5F0CB9428 /* Theme.swift */; };
+		E0BF019FE686EDC21D95F574 /* ReadingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCF516A409E2578D0EDD41 /* ReadingPlan.swift */; };
+		E3FFA9AC319FA17EC605990F /* DateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4454869EB907D379AEA0AF /* DateKey.swift */; };
 		E973D33CA3C8917E86B88657 /* RenuevoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0394B6A6FEEB4BDC4F71B /* RenuevoApp.swift */; };
 		EAEB4E34C9ABAFBA45565E43 /* QuoteLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358425C0F96121B90C3C3D70 /* QuoteLibrary.swift */; };
 		F845E33ECD25B9FBA0D3B245 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89017D26BD1238965F1EA867 /* ChatView.swift */; };
+		FAC3F6973780F11F1491A01F /* ReadingPlanLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADBBF93DC2EA8DD48ECBA12 /* ReadingPlanLibrary.swift */; };
 		FAC53D5CD772047EFCDA8701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE522ABD1FCF8E439C5D7DFE /* Assets.xcassets */; };
 		FD4E0C60503F4B1B9ED172B3 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AFA0335446EC30B888BF7D /* Quote.swift */; };
+		FFABEC80BB2A9B6020CAC470 /* DateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4454869EB907D379AEA0AF /* DateKey.swift */; };
 		FFBD393EEE7CEFFC3DA59217 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2426D0856E48276E86076EC /* JournalEntry.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,9 +121,13 @@
 
 /* Begin PBXFileReference section */
 		088B1D7708332A6CD87379FA /* RenuevoWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = RenuevoWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		121CA8522954DEDB465B2F21 /* MemorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizationView.swift; sourceTree = "<group>"; };
+		128AE4F5E58F2F9FD6236C34 /* TodayVerseIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVerseIntent.swift; sourceTree = "<group>"; };
+		150D257318451E39E8047562 /* DiarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiarioView.swift; sourceTree = "<group>"; };
 		1560A939D106E5818DB37279 /* RenuevoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenuevoWidget.swift; sourceTree = "<group>"; };
 		25E43A078F08595C49A899F6 /* RenuevoWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenuevoWidgetBundle.swift; sourceTree = "<group>"; };
 		2991C042FB1C635F173157B3 /* RenuevoMenuBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenuevoMenuBarApp.swift; sourceTree = "<group>"; };
+		2A4454869EB907D379AEA0AF /* DateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateKey.swift; sourceTree = "<group>"; };
 		2BEED23B63AE76DAC424168D /* Renuevo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Renuevo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E25E57485C484C41A3E2204 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		30E4F8D1CE61FC9DA916A176 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
@@ -84,12 +135,17 @@
 		37E9E1AFA10DCFA68F7FD81C /* JournalEntryEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryEditor.swift; sourceTree = "<group>"; };
 		398041338873243B1EB69B7C /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		3BEAB468F86FE18C8B1306C9 /* RenuevoMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenuevoMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F95ED0050E98464F0084737 /* RenuevoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenuevoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FCF516A409E2578D0EDD41 /* ReadingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingPlan.swift; sourceTree = "<group>"; };
 		482211621A7FEDF27065F2CB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		53972BB1F510B62211686089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		553F5356BB239FA1E4AEBBA1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		586C115BCE07ADDE98977CCD /* SeasonalCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonalCollection.swift; sourceTree = "<group>"; };
 		6508FFA3CDAE2A3BFDE7D188 /* MoodLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodLibrary.swift; sourceTree = "<group>"; };
 		677004B8FF4121E5F0CB9428 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		6EA5486FDB5DE4F73EECC0A0 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		7BCE391B52565BCFC409EC26 /* SpeechReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechReader.swift; sourceTree = "<group>"; };
+		7FFF0FC929D5BA2F815D8F57 /* WatchBreathingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchBreathingView.swift; sourceTree = "<group>"; };
 		85AFA0335446EC30B888BF7D /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		89017D26BD1238965F1EA867 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		896B7BF2EF3132C2B6DFF1F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,14 +153,26 @@
 		92F430E08787596C34896C4F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		95DE4191753CEE9D626783E0 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		983C6AC6BABEA8A71F5E023D /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		9932B0FF9A77BAB6334B1977 /* BreathingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingView.swift; sourceTree = "<group>"; };
 		9F8284F8F92A52D348EFF280 /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
 		A7B7244E3490944A2029B1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AF925EBCD2C3C4009C564397 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		C2426D0856E48276E86076EC /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		C5627E2BE249290CBC81C89A /* GoalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalEditorView.swift; sourceTree = "<group>"; };
+		C76166801CBB7CE989A8BFE4 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		CA567AA434DA77F707FAA8B0 /* MemorizationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizationCard.swift; sourceTree = "<group>"; };
+		CBCFB031080E453C56A9DF45 /* PrayerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerRequest.swift; sourceTree = "<group>"; };
 		CFE6DB6658E8262D23D12D84 /* RenuevoWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RenuevoWidget.entitlements; sourceTree = "<group>"; };
+		D2FF3A7B5C0630D98873B126 /* RenuevoWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenuevoWatchApp.swift; sourceTree = "<group>"; };
+		DDF5E05FCEF83A7B4B30FD91 /* ReadingPlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingPlansView.swift; sourceTree = "<group>"; };
 		DE522ABD1FCF8E439C5D7DFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E92ED7C43C4E8527DCED78DA /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		ED5F2AE5E82A1653A24485B8 /* PrayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListView.swift; sourceTree = "<group>"; };
+		ED633F2E493344B43066BE60 /* CloudSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncManager.swift; sourceTree = "<group>"; };
+		F593E33AFEFF2E79CFAC1E3F /* HabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsView.swift; sourceTree = "<group>"; };
 		F5D0394B6A6FEEB4BDC4F71B /* RenuevoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenuevoApp.swift; sourceTree = "<group>"; };
+		FA1BA4374CD30C4F7595B95C /* MetasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetasView.swift; sourceTree = "<group>"; };
+		FADBBF93DC2EA8DD48ECBA12 /* ReadingPlanLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingPlanLibrary.swift; sourceTree = "<group>"; };
 		FDA9046DCF4860E9D52FABB2 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,7 +222,9 @@
 				53972BB1F510B62211686089 /* Info.plist */,
 				8C12078FD14DFA3D53518F1D /* Renuevo.entitlements */,
 				F5D0394B6A6FEEB4BDC4F71B /* RenuevoApp.swift */,
+				D61BF9CE1535657EB352BA4A /* Audio */,
 				8C5A73CFED9049FA314DE148 /* Data */,
+				B7A5D362DAC3A1744F1CC5E3 /* Intents */,
 				2F477F6C39D05D6B0E0BECF4 /* Models */,
 				0F678410ADD9EB53ECED6922 /* Notifications */,
 				8B072355A400D5D38FF023F9 /* Views */,
@@ -175,11 +245,19 @@
 		8B072355A400D5D38FF023F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9932B0FF9A77BAB6334B1977 /* BreathingView.swift */,
 				89017D26BD1238965F1EA867 /* ChatView.swift */,
+				150D257318451E39E8047562 /* DiarioView.swift */,
 				C5627E2BE249290CBC81C89A /* GoalEditorView.swift */,
 				9F8284F8F92A52D348EFF280 /* GoalsView.swift */,
+				F593E33AFEFF2E79CFAC1E3F /* HabitsView.swift */,
+				C76166801CBB7CE989A8BFE4 /* InsightsView.swift */,
 				37E9E1AFA10DCFA68F7FD81C /* JournalEntryEditor.swift */,
 				6EA5486FDB5DE4F73EECC0A0 /* JournalView.swift */,
+				121CA8522954DEDB465B2F21 /* MemorizationView.swift */,
+				FA1BA4374CD30C4F7595B95C /* MetasView.swift */,
+				ED5F2AE5E82A1653A24485B8 /* PrayerListView.swift */,
+				DDF5E05FCEF83A7B4B30FD91 /* ReadingPlansView.swift */,
 				FDA9046DCF4860E9D52FABB2 /* RootTabView.swift */,
 				983C6AC6BABEA8A71F5E023D /* TodayView.swift */,
 			);
@@ -189,9 +267,19 @@
 		8C5A73CFED9049FA314DE148 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				ED633F2E493344B43066BE60 /* CloudSyncManager.swift */,
 				92F430E08787596C34896C4F /* DataStore.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		974E20703B99E17F5A0C4DC9 /* RenuevoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D2FF3A7B5C0630D98873B126 /* RenuevoWatchApp.swift */,
+				7FFF0FC929D5BA2F815D8F57 /* WatchBreathingView.swift */,
+			);
+			path = RenuevoWatch;
 			sourceTree = "<group>";
 		};
 		97577134FD3AF52ACE8EF9D0 /* Products */ = {
@@ -199,6 +287,7 @@
 			children = (
 				2BEED23B63AE76DAC424168D /* Renuevo.app */,
 				3BEAB468F86FE18C8B1306C9 /* RenuevoMenuBar.app */,
+				3F95ED0050E98464F0084737 /* RenuevoWatch.app */,
 				088B1D7708332A6CD87379FA /* RenuevoWidget.appex */,
 			);
 			name = Products;
@@ -217,6 +306,7 @@
 			children = (
 				432770C82A43F0B097B234AC /* RenuevoApp */,
 				9DABC3691406B629614E4921 /* RenuevoMenuBar */,
+				974E20703B99E17F5A0C4DC9 /* RenuevoWatch */,
 				A6FD211206C63A842E0A9AA6 /* RenuevoWidget */,
 				A6AE6593D8EBFE58B86B926F /* Shared */,
 				55D71CC5D6D8346F4ED6715E /* Frameworks */,
@@ -228,10 +318,17 @@
 			isa = PBXGroup;
 			children = (
 				DE522ABD1FCF8E439C5D7DFE /* Assets.xcassets */,
+				2A4454869EB907D379AEA0AF /* DateKey.swift */,
+				E92ED7C43C4E8527DCED78DA /* Habit.swift */,
+				CA567AA434DA77F707FAA8B0 /* MemorizationCard.swift */,
 				398041338873243B1EB69B7C /* Mood.swift */,
 				6508FFA3CDAE2A3BFDE7D188 /* MoodLibrary.swift */,
+				CBCFB031080E453C56A9DF45 /* PrayerRequest.swift */,
 				85AFA0335446EC30B888BF7D /* Quote.swift */,
 				358425C0F96121B90C3C3D70 /* QuoteLibrary.swift */,
+				46FCF516A409E2578D0EDD41 /* ReadingPlan.swift */,
+				FADBBF93DC2EA8DD48ECBA12 /* ReadingPlanLibrary.swift */,
+				586C115BCE07ADDE98977CCD /* SeasonalCollection.swift */,
 				677004B8FF4121E5F0CB9428 /* Theme.swift */,
 			);
 			path = Shared;
@@ -246,6 +343,22 @@
 				25E43A078F08595C49A899F6 /* RenuevoWidgetBundle.swift */,
 			);
 			path = RenuevoWidget;
+			sourceTree = "<group>";
+		};
+		B7A5D362DAC3A1744F1CC5E3 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				128AE4F5E58F2F9FD6236C34 /* TodayVerseIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		D61BF9CE1535657EB352BA4A /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				7BCE391B52565BCFC409EC26 /* SpeechReader.swift */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +404,24 @@
 			productReference = 088B1D7708332A6CD87379FA /* RenuevoWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		8B26F56E4023D15A5EECE6C9 /* RenuevoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F8E9817CAE5ACF18DA6A42 /* Build configuration list for PBXNativeTarget "RenuevoWatch" */;
+			buildPhases = (
+				66D7BF10194194A80D026B49 /* Sources */,
+				C8D2DDDE70198CE527DB4AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenuevoWatch;
+			packageProductDependencies = (
+			);
+			productName = RenuevoWatch;
+			productReference = 3F95ED0050E98464F0084737 /* RenuevoWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A034E63B2474E95D49E7E974 /* RenuevoMenuBar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D2D55B7E3C7296B7A340264 /* Build configuration list for PBXNativeTarget "RenuevoMenuBar" */;
@@ -326,6 +457,10 @@
 						DevelopmentTeam = 48CX3G6R98;
 						ProvisioningStyle = Automatic;
 					};
+					8B26F56E4023D15A5EECE6C9 = {
+						DevelopmentTeam = 48CX3G6R98;
+						ProvisioningStyle = Automatic;
+					};
 					A034E63B2474E95D49E7E974 = {
 						DevelopmentTeam = 48CX3G6R98;
 						ProvisioningStyle = Automatic;
@@ -348,6 +483,7 @@
 			targets = (
 				1203F1E2418D3D9111D4D5F0 /* Renuevo */,
 				A034E63B2474E95D49E7E974 /* RenuevoMenuBar */,
+				8B26F56E4023D15A5EECE6C9 /* RenuevoWatch */,
 				77950B2FC22E036108C9544C /* RenuevoWidget */,
 			);
 		};
@@ -379,6 +515,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8D2DDDE70198CE527DB4AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B96FB91EAD56B9A731636F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -386,13 +530,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26125B30118BDEEAC42B0476 /* DateKey.swift in Sources */,
+				24C1DB3549FA134590C94782 /* Habit.swift in Sources */,
+				02E47D02ADEDA87CB01C5BAB /* MemorizationCard.swift in Sources */,
 				36A94BDE26A6B0D5D8078D27 /* Mood.swift in Sources */,
 				713FCCB7753931FBBDC23041 /* MoodLibrary.swift in Sources */,
+				129BE91829C2C9B928467838 /* PrayerRequest.swift in Sources */,
 				26C534413B889563B2A3FE42 /* Quote.swift in Sources */,
 				92A689BCC5C1CB4D0AB5B69C /* QuoteLibrary.swift in Sources */,
+				60B6B9EE6859BAAC84904486 /* ReadingPlan.swift in Sources */,
+				FAC3F6973780F11F1491A01F /* ReadingPlanLibrary.swift in Sources */,
 				0B9446A0035B1BCB217AD2A2 /* RenuevoWidget.swift in Sources */,
 				79D23384C6B20A464F64980F /* RenuevoWidgetBundle.swift in Sources */,
+				BC3CD8E34D44AF87B21599E2 /* SeasonalCollection.swift in Sources */,
 				778AC818C1DB8DBAA344F373 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D7BF10194194A80D026B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FFA9AC319FA17EC605990F /* DateKey.swift in Sources */,
+				5A012AD46718A687D3DC4849 /* Habit.swift in Sources */,
+				4B1DC7670E3204F99D5B1AF5 /* MemorizationCard.swift in Sources */,
+				106E4676759AA7C11CB93A8A /* Mood.swift in Sources */,
+				35B7A47E22EED038C3712724 /* MoodLibrary.swift in Sources */,
+				8F74F35E9474340CF1088A8D /* PrayerRequest.swift in Sources */,
+				20C903AFEEC6F68229C8EB4F /* Quote.swift in Sources */,
+				1E0827FEAF4646FA22DDD438 /* QuoteLibrary.swift in Sources */,
+				C03F6B3CFEF9280AE57520C6 /* ReadingPlan.swift in Sources */,
+				5EE9E8E3F95895F7F370889D /* ReadingPlanLibrary.swift in Sources */,
+				258B15C5B9FC0D310DD688EB /* RenuevoWatchApp.swift in Sources */,
+				2152740E8C223F7578C6ECD0 /* SeasonalCollection.swift in Sources */,
+				DA89320F919C9F126ACC5096 /* Theme.swift in Sources */,
+				A2A426E7C115D3C5C26A8F55 /* WatchBreathingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,11 +572,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA7E42605E3D7BDC9378E82 /* DateKey.swift in Sources */,
+				B7B8562C1BB52859133EFBC8 /* Habit.swift in Sources */,
+				704E95B946ED02C4750D9B0E /* MemorizationCard.swift in Sources */,
 				122617D58190A3D8FAD7D0C9 /* Mood.swift in Sources */,
 				C17688FEA3FF8C9990E10315 /* MoodLibrary.swift in Sources */,
+				37C5B21CE780CAE0BE00266A /* PrayerRequest.swift in Sources */,
 				FD4E0C60503F4B1B9ED172B3 /* Quote.swift in Sources */,
 				EAEB4E34C9ABAFBA45565E43 /* QuoteLibrary.swift in Sources */,
+				4AB42951B8A4B60370D8A617 /* ReadingPlan.swift in Sources */,
+				60A7D92FB83746F23A94D619 /* ReadingPlanLibrary.swift in Sources */,
 				6C38E5F95FA2BB9075238199 /* RenuevoMenuBarApp.swift in Sources */,
+				AC70197D011DBCB8F75DB65D /* SeasonalCollection.swift in Sources */,
 				323F6C07F13F43786CB22CF8 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,23 +592,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570A94F48A4DC20CE78D41FF /* BreathingView.swift in Sources */,
 				4E697965B771F6891B8D0EEA /* ChatMessage.swift in Sources */,
 				F845E33ECD25B9FBA0D3B245 /* ChatView.swift in Sources */,
+				0CFA8B81299C2103BD7B49EE /* CloudSyncManager.swift in Sources */,
 				D67A530CB45F729BA12689D1 /* DataStore.swift in Sources */,
+				FFABEC80BB2A9B6020CAC470 /* DateKey.swift in Sources */,
+				7B2B3392A1D82743D03C4B44 /* DiarioView.swift in Sources */,
 				4C3B2EBD33E492C5057D726E /* Goal.swift in Sources */,
 				78D364E622455BDD2A011AD9 /* GoalEditorView.swift in Sources */,
 				9DF1F71039248C039D9CBA35 /* GoalsView.swift in Sources */,
+				5F8BDEFB295CBCACAF4C2F8F /* Habit.swift in Sources */,
+				89E90F058790E61E9AF028CB /* HabitsView.swift in Sources */,
+				695A2C8AD5D153A9A96804FD /* InsightsView.swift in Sources */,
 				FFBD393EEE7CEFFC3DA59217 /* JournalEntry.swift in Sources */,
 				7AEAC1E70772CFEC92DB48B1 /* JournalEntryEditor.swift in Sources */,
 				05118DBDF87EE254483D876F /* JournalView.swift in Sources */,
+				8A149B1CFFF67F88E1F6AB5D /* MemorizationCard.swift in Sources */,
+				967B244EB4699C700C90AD20 /* MemorizationView.swift in Sources */,
+				187FC2B5438145F301D419FA /* MetasView.swift in Sources */,
 				76F306E8071EAAD5B79069B2 /* Mood.swift in Sources */,
 				15D8F681A79F240A4EC2E94A /* MoodLibrary.swift in Sources */,
 				84D27DEC75984FD25ABA4775 /* NotificationManager.swift in Sources */,
+				8330F4A47A8AD5620E85BBEB /* PrayerListView.swift in Sources */,
+				05AFF21716E7E8ED7A972FB4 /* PrayerRequest.swift in Sources */,
 				47A12F3801A19211B8752DE6 /* Quote.swift in Sources */,
 				0F503F64A0CB07CE61875F8A /* QuoteLibrary.swift in Sources */,
+				E0BF019FE686EDC21D95F574 /* ReadingPlan.swift in Sources */,
+				7963D47616324CCB83073878 /* ReadingPlanLibrary.swift in Sources */,
+				8EE7B7BE61A118572A7C5C12 /* ReadingPlansView.swift in Sources */,
 				E973D33CA3C8917E86B88657 /* RenuevoApp.swift in Sources */,
 				D28D68416B0E9AF95EE29CE5 /* RootTabView.swift in Sources */,
+				30C50A49372FF04C8D699BFD /* SeasonalCollection.swift in Sources */,
+				9272099B848281EB36FED550 /* SpeechReader.swift in Sources */,
 				112634389D33F4EB556735B4 /* Theme.swift in Sources */,
+				470E7D5E6B590D752F54161C /* TodayVerseIntent.swift in Sources */,
 				18820186AE556200A5121F4A /* TodayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +700,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -593,6 +791,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -633,6 +832,24 @@
 			};
 			name = Release;
 		};
+		C18D40E00ED9255271B38BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Renuevo;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.renuevo.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renuevo.app.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		D32D4DA991A6FB812000AC69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -670,6 +887,24 @@
 			};
 			name = Debug;
 		};
+		F4B26049220445BB1EC478A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Renuevo;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.renuevo.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renuevo.app.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
 		F7C8690DE343621282B2785D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -695,6 +930,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07F8E9817CAE5ACF18DA6A42 /* Build configuration list for PBXNativeTarget "RenuevoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B26049220445BB1EC478A3 /* Debug */,
+				C18D40E00ED9255271B38BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		3D2D55B7E3C7296B7A340264 /* Build configuration list for PBXNativeTarget "RenuevoMenuBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

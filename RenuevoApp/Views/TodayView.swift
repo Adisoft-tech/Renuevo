@@ -2,7 +2,11 @@ import SwiftUI
 
 struct TodayView: View {
     @State private var showingSettings = false
+    @State private var showingBreathing = false
+    @StateObject private var speech = SpeechReader()
+    @ObservedObject private var store = DataStore.shared
     private var quote: Quote { QuoteLibrary.quote(for: Date()) }
+    private var seasonal: SeasonalCollection? { SeasonalLibrary.active() }
 
     var body: some View {
         NavigationStack {
@@ -15,10 +19,41 @@ struct TodayView: View {
                         .frame(maxWidth: .infinity)
                         .accessibilityLabel("Renuevo")
 
-                    Text(Date(), style: .date)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .frame(maxWidth: .infinity, alignment: .center)
+                    HStack {
+                        Text(Date(), style: .date)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                        if store.currentStreak > 0 {
+                            Label("\(store.currentStreak)", systemImage: "flame.fill")
+                                .font(.caption.bold())
+                                .foregroundStyle(.orange)
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 3)
+                                .background(Color.orange.opacity(0.12))
+                                .clipShape(Capsule())
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .center)
+
+                    if let seasonal {
+                        NavigationLink {
+                            SeasonalDetailView(collection: seasonal)
+                        } label: {
+                            HStack {
+                                Image(systemName: seasonal.symbol)
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(seasonal.title).font(.subheadline.bold())
+                                    Text(seasonal.subtitle).font(.caption)
+                                }
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                            }
+                            .padding(12)
+                            .background(Color.renuevoAccent.opacity(0.12))
+                            .foregroundStyle(Color.renuevoAccent)
+                            .clipShape(RoundedRectangle(cornerRadius: 14))
+                        }
+                    }
 
                     VStack(alignment: .leading, spacing: 16) {
                         Label(quote.category.rawValue, systemImage: quote.category.symbol)
@@ -42,10 +77,14 @@ struct TodayView: View {
                     .background(Color.renuevoBackground)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
 
-                    ShareLink(item: "\(quote.text) — \(quote.reference)") {
-                        Label("Compartir mensaje", systemImage: "square.and.arrow.up")
+                    HStack {
+                        ShareLink(item: "\(quote.text) — \(quote.reference)") {
+                            Label("Compartir mensaje", systemImage: "square.and.arrow.up")
+                        }
+                        .buttonStyle(.bordered)
+
+                        SpeechButton(speech: speech, text: "\(quote.text). \(quote.reflection)")
                     }
-                    .buttonStyle(.bordered)
 
                     Divider().padding(.vertical, 4)
 
@@ -70,6 +109,15 @@ struct TodayView: View {
                         Text(quote.prayer)
                             .italic()
                     }
+
+                    Button {
+                        showingBreathing = true
+                    } label: {
+                        Label("Hacer un ejercicio de respiración", systemImage: "wind")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.bordered)
+                    .tint(Color.renuevoAccent)
                 }
                 .padding()
             }
@@ -87,7 +135,41 @@ struct TodayView: View {
             .sheet(isPresented: $showingSettings) {
                 NotificationSettingsView()
             }
+            .sheet(isPresented: $showingBreathing) {
+                NavigationStack { BreathingView() }
+            }
         }
+    }
+}
+
+struct SeasonalDetailView: View {
+    let collection: SeasonalCollection
+    @StateObject private var speech = SpeechReader()
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                ForEach(collection.quotes) { quote in
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text(quote.text)
+                            .font(.title3.weight(.semibold))
+                        Text(quote.reference)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                        Text(quote.reflection)
+                            .font(.subheadline)
+                        SpeechButton(speech: speech, text: "\(quote.text). \(quote.reflection)")
+                    }
+                    .padding(16)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Color.renuevoBackground)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                }
+            }
+            .padding()
+        }
+        .navigationTitle(collection.title)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -130,6 +212,8 @@ struct NotificationSettingsView: View {
                     title: "Reflexión de la noche",
                     description: "Aprendizajes del día, qué hiciste bien y qué mejorar."
                 )
+
+                ICloudSyncSection()
             }
             .navigationTitle("Notificaciones")
             .toolbar {
@@ -137,6 +221,23 @@ struct NotificationSettingsView: View {
                     Button("Listo") { dismiss() }
                 }
             }
+        }
+    }
+}
+
+private struct ICloudSyncSection: View {
+    @State private var isEnabled = CloudSyncManager.shared.isEnabled
+
+    var body: some View {
+        Section {
+            Toggle("Sincronizar con iCloud", isOn: $isEnabled)
+                .onChange(of: isEnabled) { newValue in
+                    CloudSyncManager.shared.isEnabled = newValue
+                }
+        } header: {
+            Text("iCloud")
+        } footer: {
+            Text("Opcional. Lleva metas, diario, hábitos y peticiones de oración a tus otros dispositivos con la misma cuenta de iCloud. Apagado por defecto: por diseño, todo se queda en tu teléfono a menos que lo actives.")
         }
     }
 }
