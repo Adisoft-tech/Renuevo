@@ -84,6 +84,7 @@
 		A2A426E7C115D3C5C26A8F55 /* WatchBreathingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF0FC929D5BA2F815D8F57 /* WatchBreathingView.swift */; };
 		A3B96FB91EAD56B9A731636F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE522ABD1FCF8E439C5D7DFE /* Assets.xcassets */; };
 		AC70197D011DBCB8F75DB65D /* SeasonalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C115BCE07ADDE98977CCD /* SeasonalCollection.swift */; };
+		AE0569E0E3B72960CFAD64FE /* PodcastsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D99BF04A3C8A46C38B90B /* PodcastsView.swift */; };
 		B7B8562C1BB52859133EFBC8 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92ED7C43C4E8527DCED78DA /* Habit.swift */; };
 		B99EF2AB62E604EE28EB7D1E /* RenuevoWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 088B1D7708332A6CD87379FA /* RenuevoWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BA6A9EA1C3A5575BDD4A260E /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4B3465CFC0C6EB9813941 /* AppGroup.swift */; };
@@ -147,6 +148,7 @@
 		2FDD2001FD06721CF1815C14 /* StorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKeys.swift; sourceTree = "<group>"; };
 		358425C0F96121B90C3C3D70 /* QuoteLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteLibrary.swift; sourceTree = "<group>"; };
 		37E9E1AFA10DCFA68F7FD81C /* JournalEntryEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryEditor.swift; sourceTree = "<group>"; };
+		387D99BF04A3C8A46C38B90B /* PodcastsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsView.swift; sourceTree = "<group>"; };
 		398041338873243B1EB69B7C /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		3BEAB468F86FE18C8B1306C9 /* RenuevoMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenuevoMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F95ED0050E98464F0084737 /* RenuevoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenuevoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -272,6 +274,7 @@
 				6EA5486FDB5DE4F73EECC0A0 /* JournalView.swift */,
 				121CA8522954DEDB465B2F21 /* MemorizationView.swift */,
 				FA1BA4374CD30C4F7595B95C /* MetasView.swift */,
+				387D99BF04A3C8A46C38B90B /* PodcastsView.swift */,
 				ED5F2AE5E82A1653A24485B8 /* PrayerListView.swift */,
 				DDF5E05FCEF83A7B4B30FD91 /* ReadingPlansView.swift */,
 				FDA9046DCF4860E9D52FABB2 /* RootTabView.swift */,
@@ -646,6 +649,7 @@
 				76F306E8071EAAD5B79069B2 /* Mood.swift in Sources */,
 				15D8F681A79F240A4EC2E94A /* MoodLibrary.swift in Sources */,
 				84D27DEC75984FD25ABA4775 /* NotificationManager.swift in Sources */,
+				AE0569E0E3B72960CFAD64FE /* PodcastsView.swift in Sources */,
 				8330F4A47A8AD5620E85BBEB /* PrayerListView.swift in Sources */,
 				05AFF21716E7E8ED7A972FB4 /* PrayerRequest.swift in Sources */,
 				47A12F3801A19211B8752DE6 /* Quote.swift in Sources */,

@@ -99,6 +99,11 @@ struct InsightsView: View {
             } label: {
                 Label("Ejercicio de respiración", systemImage: "wind")
             }
+            NavigationLink {
+                PodcastsView()
+            } label: {
+                Label("Podcasts", systemImage: "mic.fill")
+            }
         }
     }
 
