@@ -13,7 +13,6 @@
 		05AFF21716E7E8ED7A972FB4 /* PrayerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFB031080E453C56A9DF45 /* PrayerRequest.swift */; };
 		05CCB9217317A52403833AE5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482211621A7FEDF27065F2CB /* WidgetKit.framework */; };
 		0B9446A0035B1BCB217AD2A2 /* RenuevoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560A939D106E5818DB37279 /* RenuevoWidget.swift */; };
-		0CFA8B81299C2103BD7B49EE /* CloudSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED633F2E493344B43066BE60 /* CloudSyncManager.swift */; };
 		0F503F64A0CB07CE61875F8A /* QuoteLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358425C0F96121B90C3C3D70 /* QuoteLibrary.swift */; };
 		10272E50107767BC01107ECA /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D4B3465CFC0C6EB9813941 /* AppGroup.swift */; };
 		106E4676759AA7C11CB93A8A /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398041338873243B1EB69B7C /* Mood.swift */; };
@@ -192,7 +191,6 @@
 		DE522ABD1FCF8E439C5D7DFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E92ED7C43C4E8527DCED78DA /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		ED5F2AE5E82A1653A24485B8 /* PrayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListView.swift; sourceTree = "<group>"; };
-		ED633F2E493344B43066BE60 /* CloudSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncManager.swift; sourceTree = "<group>"; };
 		F593E33AFEFF2E79CFAC1E3F /* HabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsView.swift; sourceTree = "<group>"; };
 		F5D0394B6A6FEEB4BDC4F71B /* RenuevoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenuevoApp.swift; sourceTree = "<group>"; };
 		FA1BA4374CD30C4F7595B95C /* MetasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetasView.swift; sourceTree = "<group>"; };
@@ -292,7 +290,6 @@
 		8C5A73CFED9049FA314DE148 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				ED633F2E493344B43066BE60 /* CloudSyncManager.swift */,
 				92F430E08787596C34896C4F /* DataStore.swift */,
 			);
 			path = Data;
@@ -639,7 +636,6 @@
 				570A94F48A4DC20CE78D41FF /* BreathingView.swift in Sources */,
 				4E697965B771F6891B8D0EEA /* ChatMessage.swift in Sources */,
 				F845E33ECD25B9FBA0D3B245 /* ChatView.swift in Sources */,
-				0CFA8B81299C2103BD7B49EE /* CloudSyncManager.swift in Sources */,
 				D67A530CB45F729BA12689D1 /* DataStore.swift in Sources */,
 				FFABEC80BB2A9B6020CAC470 /* DateKey.swift in Sources */,
 				7B2B3392A1D82743D03C4B44 /* DiarioView.swift in Sources */,

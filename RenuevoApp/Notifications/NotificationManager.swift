@@ -57,7 +57,11 @@ enum ReminderKind: String, CaseIterable {
 final class NotificationManager {
     static let shared = NotificationManager()
 
-    private let daysAhead = 60
+    // iOS caps an app at 64 pending local notifications total — anything past
+    // that gets silently dropped. With 3 reminder kinds, 14 days keeps us at
+    // 42 max, far under the cap (and refreshSchedule() re-tops this window
+    // every time the app is foregrounded, so 14 days ahead is always enough).
+    private let daysAhead = 14
 
     private func key(_ suffix: String, for kind: ReminderKind) -> String {
         "renuevo.notif.\(kind.rawValue).\(suffix)"
@@ -124,13 +128,17 @@ final class NotificationManager {
             center.removePendingNotificationRequests(withIdentifiers: idsToRemove)
 
             let calendar = Calendar.current
-            for kind in ReminderKind.allCases {
-                guard self.isEnabled(for: kind) else { continue }
-                let hour = self.hour(for: kind)
-                let minute = self.minute(for: kind)
+            // Interleaved by day (not grouped by kind): if we ever got close to
+            // iOS's pending-notification cap again, this way the nearest days
+            // keep every reminder kind instead of one kind eating the whole
+            // budget and silently starving the others.
+            for offset in 0..<self.daysAhead {
+                guard let day = calendar.date(byAdding: .day, value: offset, to: Date()) else { continue }
+                for kind in ReminderKind.allCases {
+                    guard self.isEnabled(for: kind) else { continue }
+                    let hour = self.hour(for: kind)
+                    let minute = self.minute(for: kind)
 
-                for offset in 0..<self.daysAhead {
-                    guard let day = calendar.date(byAdding: .day, value: offset, to: Date()) else { continue }
                     guard let fireDate = calendar.date(
                         bySettingHour: hour, minute: minute, second: 0, of: day
                     ), fireDate > Date() else { continue }

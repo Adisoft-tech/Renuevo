@@ -4,21 +4,19 @@ import WidgetKit
 
 /// Persists goals, journal, habits, prayers and progress only on-device, via
 /// UserDefaults + JSON, in the shared App Group container so the widget
-/// extension can read goals/habits too. No account, no network by default —
-/// everything stays on the user's phone unless iCloud sync is enabled (see
-/// `CloudSyncManager`).
+/// extension can read goals/habits too. No account, no network — everything
+/// stays on the user's phone.
 final class DataStore: ObservableObject {
     static let shared = DataStore()
 
     @Published var goals: [Goal] = [] {
         didSet {
             save(goals, forKey: StorageKeys.goals)
-            CloudSyncManager.shared.pushAll()
             WidgetCenter.shared.reloadAllTimelines()
         }
     }
     @Published var entries: [JournalEntry] = [] {
-        didSet { save(entries, forKey: StorageKeys.entries); CloudSyncManager.shared.pushAll() }
+        didSet { save(entries, forKey: StorageKeys.entries) }
     }
     @Published var chatMessages: [ChatMessage] = [] {
         didSet { save(chatMessages, forKey: StorageKeys.chatMessages) }
@@ -26,12 +24,11 @@ final class DataStore: ObservableObject {
     @Published var habits: [Habit] = [] {
         didSet {
             save(habits, forKey: StorageKeys.habits)
-            CloudSyncManager.shared.pushAll()
             WidgetCenter.shared.reloadAllTimelines()
         }
     }
     @Published var prayerRequests: [PrayerRequest] = [] {
-        didSet { save(prayerRequests, forKey: StorageKeys.prayerRequests); CloudSyncManager.shared.pushAll() }
+        didSet { save(prayerRequests, forKey: StorageKeys.prayerRequests) }
     }
     @Published var readingProgress: [String: ReadingPlanProgress] = [:] {
         didSet { save(readingProgress, forKey: StorageKeys.readingProgress) }

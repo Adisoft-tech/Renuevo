@@ -232,8 +232,6 @@ struct NotificationSettingsView: View {
                     title: "Reflexión de la noche",
                     description: "Aprendizajes del día, qué hiciste bien y qué mejorar."
                 )
-
-                ICloudSyncSection()
             }
             .navigationTitle("Notificaciones")
             .toolbar {
@@ -241,23 +239,6 @@ struct NotificationSettingsView: View {
                     Button("Listo") { dismiss() }
                 }
             }
-        }
-    }
-}
-
-private struct ICloudSyncSection: View {
-    @State private var isEnabled = CloudSyncManager.shared.isEnabled
-
-    var body: some View {
-        Section {
-            Toggle("Sincronizar con iCloud", isOn: $isEnabled)
-                .onChange(of: isEnabled) { newValue in
-                    CloudSyncManager.shared.isEnabled = newValue
-                }
-        } header: {
-            Text("iCloud")
-        } footer: {
-            Text("Opcional. Lleva metas, diario, hábitos y peticiones de oración a tus otros dispositivos con la misma cuenta de iCloud. Apagado por defecto: por diseño, todo se queda en tu teléfono a menos que lo actives.")
         }
     }
 }
